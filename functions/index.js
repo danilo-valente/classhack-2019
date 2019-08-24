@@ -1,4 +1,4 @@
-const path = require('path');;
+const path = require('path');
 const fs = require('fs');
 const firebase = require('firebase-admin');
 const functions = require('firebase-functions');
@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(require('express-edge'));
 app.set('views', './views');
 
-app.get('/', function (request, response) {
+app.get('/', (request, response) => {
     response.render('index', {});
 });
 
