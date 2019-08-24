@@ -1,16 +1,14 @@
 const firebase = require('firebase-admin');
 const functions = require('firebase-functions');
 const express = require('express');
-const engines = require('consolidate');
 
 const firebaseApp = firebase.initializeApp(
     functions.config().firebase
 );
  
 const app = express();
-app.engine('hbs', engines.handlebars);
+app.use(require('express-edge'));
 app.set('views', './views');
-app.set('view engine', 'hbs');
 
 app.get('/', function (request, response) {
     response.render('index', {});
