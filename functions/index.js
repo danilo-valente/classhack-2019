@@ -33,8 +33,8 @@ const apiRouter = express.Router({ mergeParams: true });
 
 app.use('/api', apiRouter);
 
-['events'].forEach(route => {
-    require(path.join(__dirname, ROUTES_PATH, route))(apiRouter, firebaseApp);
+fs.readdirSync(ROUTES_PATH).forEach(factoryPath => {
+    require(path.join(__dirname, ROUTES_PATH, factoryPath))(apiRouter, firebaseApp);
 });
 
 exports.app = functions.https.onRequest(app);
