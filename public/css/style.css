@@ -251,7 +251,7 @@ nav ul ul li a {
     letter-spacing: 1px;
 }
 
-/* Second, Third and more Tiers	
+/* Second, Third and more Tiers
  * We move the 2nd and 3rd etc tier dropdowns to the left
  * by the amount of the width of the first tier.
 */
@@ -608,7 +608,7 @@ h3.title-w3 {
     color: #719cfe;
 }
 
-.services h3.title-w3,
+.assuntos h3.title-w3,
 .clients h3.title-w3,
 .contact h3.title-w3 {
     color: #fff;
@@ -627,7 +627,7 @@ h3.title-sub span {
 /* //bannner bottom */
 
 /* what */
-.services {
+.assuntos {
     background: url(../images/bg3.jpg) center no-repeat fixed;
     background-size: cover;
     -webkit-background-size: cover;
@@ -636,7 +636,7 @@ h3.title-sub span {
     -ms-background-size: cover;
 }
 
-.services h3.title-w3 span {
+.assuntos h3.title-w3 span {
     color: #ff7f62;
 }
 
